@@ -3,19 +3,13 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { PaymentDetails } from './payment-details/payment-details';
+import { PaymentDetailForm } from './payment-details/payment-detail-form/payment-detail-form';
 
 @NgModule({
-  declarations: [
-    App
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideClientHydration(withEventReplay()),
-  ],
-  bootstrap: [App]
+  declarations: [App, PaymentDetails, PaymentDetailForm],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideBrowserGlobalErrorListeners(), provideClientHydration(withEventReplay())],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

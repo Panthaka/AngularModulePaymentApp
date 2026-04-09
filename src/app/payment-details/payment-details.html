@@ -1,0 +1,8 @@
+<div class="bg-body-secondary text-center py-5 rounded-2">
+  <h1>Payment details</h1>
+  <p class="lead">Manage your payment details here</p>
+</div>
+<div class="row mt-5">
+  <div class="col-6"><app-payment-detail-form [(cardNumberChild)]="cardNumberParent" ></app-payment-detail-form></div>
+  <p class="col-6">Card Number: {{cardNumberParent()}}</p>
+</div>
