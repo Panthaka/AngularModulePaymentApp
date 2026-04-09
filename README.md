@@ -1,7 +1,7 @@
 # AngularModulePaymentApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.  
-Parent-Child Components(Two way) comunication  
+Parent-Child Components(Two way) communication  
 Angular Routing implementation 
 
 ## Development server
